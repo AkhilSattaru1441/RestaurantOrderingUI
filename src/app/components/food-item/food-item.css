@@ -1,0 +1,165 @@
+.food-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding:20px;
+}
+
+.food-card {
+  border: none;
+  border-radius: 14px;
+  width: 300px;
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  transition: transform 0.2s,box-shadow 0.2s;
+}
+
+.food-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+.food-image {
+  width: 100%;
+  height: 200px;
+  
+}
+
+.food-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.food-details {
+  padding: 18px;
+}
+
+.food-card h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.food-card p {
+    margin:8px 0;
+    line-height: 1.5;
+    color: #555;
+}
+
+.food-card p.price {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 12px 0;
+} 
+
+.food-details button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 8px;
+  background: #ff6b00;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.food-details button:hover {
+  background: #e85d00;
+}
+
+.cart-container{
+    margin:30px 20px;
+    padding: 20px;
+    background:  #f8f8f8;
+    border-radius: 12px;
+}
+
+.cart-container h2 {
+     margin-bottom: 20px;
+    font-size: 25px;
+    color: #333;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+
+}
+
+.cart-item {
+  background: white;
+  padding: 18px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.cart-item p {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.cart-item button {
+  border: 1px solid #ddd;
+  background: white;
+  padding: 8px 14px;
+  margin: 5px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.cart-item button:hover {
+  background: #f0f0f0;
+}
+
+.cart-item span {
+  font-weight: bold;
+  font-size: 18px;
+  margin: 0 5px;
+}
+.cart-food {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.cart-food p {
+    margin: 0;
+}
+.cart-food span {
+    font-weight:bold;
+}
+.cart-controls {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.cart-container >h3 {
+    text-align: right;
+    font-size: 24px;
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 2px solid #e9e5e5
+}
+.place-order-btn {
+    width :100%;
+    padding: 14px;
+    margin-top: 15px;
+    border:none;
+    border-radius: 8px;
+    background: rgb(214, 126, 12);
+    color:white;
+    font-size:18px;
+    font-weight: bold;
+    cursor:pointer;
+    transition: 0.2s;
+}
+ 
+ .place-order-btn:hover{
+    background: #ec8d07;
+    transform: translateY(-2px);
+
+}

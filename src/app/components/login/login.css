@@ -1,0 +1,108 @@
+.login-page {
+min-height: 100vh;
+display:flex;
+justify-content: center;
+align-items: center;
+background: linear-gradient(135deg, #fff3e0, #ffe0b2);
+padding: 20px;
+}
+
+.login-card {
+width: 380px;
+background: white;
+padding: 40px;
+border-radius: 20px;
+box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+text-align: center;
+}
+ 
+.login-card h1 {
+    margin-bottom: 10px;
+    font: size 28px;
+}
+
+.login-card h2 {
+    margin-bottom: 8px;
+    font-size: 24px;
+}
+
+.login-subtitle {
+color: #777;
+font-size: 14px;
+margin-bottom: 30px;
+}
+
+.form-group {
+    text-align:left;
+    margin-bottom:20px;
+}
+
+.form-group label{
+    display:block;
+    margin-bottom:7px;
+    font-weight: 600;
+}
+
+.form-group input {
+    width:100%;
+    box-sizing:border-box;
+    padding:12px;
+    border: 1px solid #e8e8e8;
+    border-radius:8px;
+    font-size:15px;
+    outline:none;
+
+}   
+
+.form-group input {
+border-color: #ff7a00;
+box-shadow: 0 0 5px rgba(255, 122, 0, 0.2);
+}
+
+.login-btn{
+    background: #be7e45;
+}
+
+.register-text {
+    margin: 25px 0 10px;
+    color: #666;
+    font-size:14px;
+
+
+}
+.register-text {
+margin: 25px 0 10px;
+color: #666;
+font-size: 14px;
+}
+
+.register-btn {
+width: 100%;
+padding: 11px;
+border: 2px solid #ff7a00;
+border-radius: 8px;
+background: white;
+color: #ff7a00;
+font-size: 15px;
+font-weight: bold;
+cursor: pointer;
+}
+
+.register-btn {
+background: #fff3e0;
+}
+
+.logout-btn {
+margin-top: 15px;
+border: none;
+background: none;
+color: #999;
+cursor: pointer;
+font-size: 13px;
+}
+
+.logout-btn {
+color: #555;
+}
+
+

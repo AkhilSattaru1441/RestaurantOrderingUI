@@ -1,0 +1,24 @@
+<nav class="navbar">
+
+    <div class="logo">
+        🍴 Akhil's Kitchen
+    </div>
+
+    <div class="nav-links">
+        <a routerLink="/home">🏠 Home</a>
+        <a routerLink="/category">🍽️ Categories</a>
+        <a routerLink="/food-item">🍛Food Items</a>
+        <a routerLink="/cart">🛒 Cart</a>
+        @if (isLoggedIn) {
+            <span>Welcome, {{ userName }} 👋</span>
+
+        }
+        @if (!isLoggedIn) {
+            <a routerLink="/login">🔐 Login</a>
+        }
+
+        @if (isLoggedIn) {
+            <button (click)="logout()">🚪Logout</button>
+        }
+    </div>
+</nav>

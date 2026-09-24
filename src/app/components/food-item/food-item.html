@@ -1,0 +1,70 @@
+<h2>{{ categoryName}}</h2>
+
+<div class="food-container">
+
+  <div *ngFor="let food of foodItems">
+
+    <div class="food-card">
+
+      <div class="food-image">
+        <img [src]="food.imageUrl" [alt]="food.foodName">
+      </div>
+
+      <div class="food-details">
+
+        <h3>{{ food.foodName }}</h3>
+
+        <p>{{ food.description }}</p>
+
+        <p class="price">Price: ₹{{ food.price }}</p>
+
+        <p *ngIf="food.isVeg">🟢 Veg</p>
+
+        <p *ngIf="!food.isVeg">🔴 Non-Veg</p>
+
+        <p *ngIf="food.isAvailable">✅ Available</p>
+
+        <p *ngIf="!food.isAvailable">❌ Not Available</p>
+
+        <button (click)="addToCart(food)"[disabled]="!food.isAvailable">
+          {{food.isAvailable ? 'Add to cart' : 'Not Available' }}
+        </button>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+<div class="cart-container">
+
+  <h2>🛒 Your Cart</h2>
+
+  <div *ngFor="let item of cart" class="cart-item">
+
+  <div class="cart-food">
+    <p>{{ item.food.foodName }}</p>
+    <span>₹{{ item.food.price }}</span>
+  </div>
+
+  <div class="cart-controls">
+
+    <button (click)="decreaseQuantity(item)">−</button>
+
+    <span>{{ item.quantity }}</span>
+
+    <button (click)="increaseQuantity(item)">+</button>
+
+    <button (click)="removeFromCart(item)">Remove</button>
+
+  </div>
+
+</div>
+       <h3>Total: ₹{{ cartTotal }}</h3>
+
+<button class="place-order-btn"(click)="goToCart()">
+    View Cart
+</button>
+</div>

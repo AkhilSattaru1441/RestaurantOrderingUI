@@ -1,0 +1,43 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:15px 30px;
+    background: #0f0f0f;    
+}
+
+.logo {
+    color:white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links{
+    display: flex;
+    gap:25px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size:16px;
+
+}
+
+.nav-links a :hover {
+    color: orange
+}
+
+.nav-links span {
+    color: white;
+}
+
+.nav-links button {
+    background: white;
+    color: #333;
+     border: none;
+    padding: 8px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}

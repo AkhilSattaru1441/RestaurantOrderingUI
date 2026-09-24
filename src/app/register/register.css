@@ -1,0 +1,103 @@
+.register-page{
+    min-height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #fff3e0, #ffe0b2);
+    padding:20px;
+
+}
+
+.register-card {
+width: 350px;
+background: white;
+padding: 20px 30px;
+border-radius: 20px;
+box-shadow: 0 10px 30px rgba(113, 68, 68, 0.203);
+text-align: center;
+}
+
+.register-card h1{
+    margin-bottom:8px;
+    font-size:28px;
+
+}
+.register-card h2 {
+    margin-bottom: 8px;
+    font-size: 24px;
+}
+.register-subtitle {
+    color:#777;
+    font-size :14px;
+    margin-bottom:28px;
+
+}
+
+.form-group {
+text-align: left;
+margin-bottom: 18px;
+}
+
+.form-group label {
+display: block;
+margin-bottom: 7px;
+font-weight: 600;
+}
+
+.form-group input {
+width: 100%;
+box-sizing: border-box;
+padding: 12px;
+border: 1px solid #ddd;
+border-radius: 8px;
+font-size: 15px;
+outline: none;
+}
+
+.form-group input {
+border-color: #ff7a00;
+
+}
+create-btn {
+width: 100%;
+padding: 13px;
+border: none;
+border-radius: 8px;
+background: #ff7a00;
+color: white;
+font-size: 16px;
+font-weight: bold;
+cursor: pointer;
+}
+
+.create-btn {
+background: #e66d00;
+}
+
+.error-message {
+color: #d32f2f;
+font-size: 14px;
+margin: 10px 0 15px;
+}
+
+.login-text {
+margin: 25px 0 10px;
+color: #666;
+font-size: 14px;
+}
+
+.login-btn {
+width: 100%;
+padding: 11px;
+border: 2px solid #ff7a00;
+border-radius: 8px;
+background: white;
+color: #ff7a00;
+font-size: 15px;
+font-weight: bold;
+cursor: pointer;
+}
+
+.login-btn {
+background: #fff3e0;
+}

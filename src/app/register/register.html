@@ -1,0 +1,64 @@
+<div class="register-page">
+<div class="register-card">
+
+<form #registerForm="ngForm" (ngSubmit)="register()">
+<h1>Restaurant Ordering</h1>
+<h2>Create Account</h2>
+<p>Description</p>
+
+
+<div class="form-group">
+<label>Username</label>
+<input type="text"
+       name="userName"
+       placeholder="Enter your Username" 
+       [(ngModel)] ="userName" 
+       required>
+</div>
+
+<div class="form-group">
+<label>Email</label>
+<input type="email" 
+       name="email"
+       placeholder="Enter your Email"
+       [(ngModel)] ="email"
+        required email>
+</div>
+
+<div class="form-group">
+<label>Phone Number</label>
+<input type="text" 
+       name="phoneNumber"
+       placeholder="Enter your Phone Number"
+       [(ngModel)]="phoneNumber"
+        required  pattern="[0-9]{10}">
+</div>
+
+<div class="form-group">
+<label>Password</label>
+<input type="password" 
+       name="password"
+       placeholder="Password"
+        [(ngModel)] ="password" 
+        required minlength="6">
+</div>
+
+<p class="error-message" *ngIf="errorMessage">
+  {{ errorMessage }}
+</p>
+
+<button class="create-btn" type="submit" [disabled]="registerForm.invalid">
+  Create Account
+</button>
+
+<p class="login-text">
+  Already have an account?
+</p>
+
+<button class="login-btn" routerLink="/login">
+  Login
+</button>
+
+</form>
+</div>
+</div>

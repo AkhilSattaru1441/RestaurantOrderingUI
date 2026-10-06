@@ -9,5 +9,5 @@ import { Navbar } from './components/navbar/navbar';
   templateUrl: './app.html',
 })
 export class App {
-  protected readonly title = signal('RestaurantOrderingUISystem-Practice');
+  protected readonly title = signal('RestaurantOrderingUISystem Branch Practice');
 }
